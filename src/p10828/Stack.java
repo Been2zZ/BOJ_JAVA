@@ -19,7 +19,6 @@ public class Stack {
     public void push(int x) {
         stack[size] = x;
         size++;
-       // System.out.println(size);
     }
 
     public Object pop() {
