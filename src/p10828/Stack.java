@@ -21,10 +21,10 @@ public class Stack {
         size++;
     }
 
-    public Object pop() {
-        Object top;
+    public int pop() {
+        int top;
         if(size != 0) {
-            top = stack[size];
+            top = (int)stack[size];
             stack[size] = null;
             size--;
             return top;
@@ -41,7 +41,7 @@ public class Stack {
     }
 
     public int size() {
-        return size;
+        return size + 1;
     }
 
     public Object top() {
