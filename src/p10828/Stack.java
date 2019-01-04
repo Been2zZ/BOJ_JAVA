@@ -22,10 +22,10 @@ public class Stack {
        // System.out.println(size);
     }
 
-    public int pop() {
-        int top;
+    public Object pop() {
+        Object top;
         if(size() != 0) {
-            top = (int)stack[size - 1];
+            top = stack[size - 1];
             stack[size - 1] = null;
             size--;
             return top;
