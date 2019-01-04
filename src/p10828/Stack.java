@@ -19,13 +19,14 @@ public class Stack {
     public void push(int x) {
         stack[size] = x;
         size++;
+       // System.out.println(size);
     }
 
     public int pop() {
         int top;
-        if(size != 0) {
-            top = (int)stack[size];
-            stack[size] = null;
+        if(size() != 0) {
+            top = (int)stack[size - 1];
+            stack[size - 1] = null;
             size--;
             return top;
         }
@@ -34,19 +35,19 @@ public class Stack {
     }
 
     public int empty() {
-        if(size == 0)
+        if(size() == 0)
             return 1;
         else
             return 0;
     }
 
     public int size() {
-        return size + 1;
+        return size;
     }
 
     public Object top() {
-        if(size != 0)
-            return stack[size];
+        if(size() != 0)
+            return stack[size - 1];
         else
             return -1;
     }

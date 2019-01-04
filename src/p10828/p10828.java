@@ -26,17 +26,17 @@ public class p10828 {
 
         stack.push(1);
         stack.push(2);
-        stack.top();
-        stack.size();
-        stack.empty();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.size();
-        stack.empty();
-        stack.pop();
+        System.out.println(stack.top());
+        System.out.println(stack.size());
+        System.out.println(stack.empty());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
+        System.out.println(stack.empty());
+        System.out.println(stack.pop());
         stack.push(3);
-        stack.empty();
-        stack.top();
+        System.out.println(stack.empty());
+        System.out.println(stack.top());
     }
 }
